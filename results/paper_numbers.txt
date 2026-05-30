@@ -1,0 +1,26 @@
+=================================================================
+NATURECRIT — CLASSIFICATION NUMBERS
+Generated: 2026-04-18 22:31:49
+=================================================================
+
+Our model accuracy:     80.5%
+Our model F1-macro:     78.2%
+Our model F1-EXTENDED:  71.0%
+Majority baseline:      65.4%
+Improvement over maj:   +15.1 pp
+
+  Majority baseline                             acc=65.4%  p=4e-06
+  Qwen2.5-7B-Instruct (zero-shot)               acc=77.0%  p=0.185326
+  Qwen2.5-7B-Instruct (5-shot)                  acc=65.4%  p=4e-06
+  Llama-3-8B-Instruct (zero-shot)            acc=67.9%  p=4.8e-05
+  DeepSeek-R1-Distill-Qwen-7B (zero-shot)       acc=65.4%  p=4e-06
+  Gemini-3.1-flash-lite-preview (zero-shot)                  acc=70.1%  p=0.000519
+  Qwen2.5-7B + LoRA (no masking)                acc=62.0%  p=0.0
+  \textbf{Qwen2.5-7B + LoRA (ours)}             acc=80.5%  p=N/A
+
+Per-domain (our model):
+  biology          acc=83.8%  n=68
+  chemistry        acc=77.6%  n=67
+  earth_science    acc=76.9%  n=52
+  neuroscience     acc=81.5%  n=65
+  physics          acc=81.8%  n=66

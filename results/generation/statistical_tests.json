@@ -1,0 +1,109 @@
+{
+  "tests": {
+    "qwen_zeroshot": {
+      "rouge1_test": {
+        "observed_diff_mean": -0.018992,
+        "p_value": 0.001,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rouge2_test": {
+        "observed_diff_mean": -0.002716,
+        "p_value": 0.14,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": false,
+        "significant_at_0.01": false
+      },
+      "rougeL_test": {
+        "observed_diff_mean": 0.018268,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      }
+    },
+    "llama_zeroshot": {
+      "rouge1_test": {
+        "observed_diff_mean": -0.036757,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rouge2_test": {
+        "observed_diff_mean": -0.014274,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rougeL_test": {
+        "observed_diff_mean": -0.009137,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      }
+    },
+    "deepseek_zeroshot": {
+      "rouge1_test": {
+        "observed_diff_mean": 0.077027,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rouge2_test": {
+        "observed_diff_mean": 0.0195,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rougeL_test": {
+        "observed_diff_mean": 0.038675,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      }
+    },
+    "gemini_zeroshot": {
+      "rouge1_test": {
+        "observed_diff_mean": -0.045333,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rouge2_test": {
+        "observed_diff_mean": -0.021178,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      },
+      "rougeL_test": {
+        "observed_diff_mean": 0.008171,
+        "p_value": 0.0005,
+        "n_bootstrap": 2000,
+        "alternative": "two-sided",
+        "significant_at_0.05": true,
+        "significant_at_0.01": true
+      }
+    }
+  },
+  "note": "paired bootstrap, n_boot=2000"
+}

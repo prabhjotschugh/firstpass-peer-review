@@ -1,0 +1,147 @@
+{
+  "qwen_zeroshot": {
+    "n_examples": 372,
+    "n_empty": 0,
+    "rouge1": 0.3731,
+    "rouge1_ci": [
+      0.3642,
+      0.3822
+    ],
+    "rouge2": 0.0903,
+    "rouge2_ci": [
+      0.0878,
+      0.0927
+    ],
+    "rougeL": 0.1362,
+    "rougeL_ci": [
+      0.1334,
+      0.1389
+    ],
+    "bertscore_f1": null,
+    "bertscore_f1_ci": null,
+    "length_stats": {
+      "mean": 1018.8,
+      "median": 997.0,
+      "std": 241.2,
+      "min": 90,
+      "max": 1482
+    },
+    "vocab_ttr": 0.3669
+  },
+  "llama_zeroshot": {
+    "n_examples": 372,
+    "n_empty": 0,
+    "rouge1": 0.3909,
+    "rouge1_ci": [
+      0.3842,
+      0.3974
+    ],
+    "rouge2": 0.1019,
+    "rouge2_ci": [
+      0.0996,
+      0.1042
+    ],
+    "rougeL": 0.1636,
+    "rougeL_ci": [
+      0.1612,
+      0.1659
+    ],
+    "bertscore_f1": null,
+    "bertscore_f1_ci": null,
+    "length_stats": {
+      "mean": 1005.9,
+      "median": 1001.0,
+      "std": 129.0,
+      "min": 675,
+      "max": 1401
+    },
+    "vocab_ttr": 0.229
+  },
+  "deepseek_zeroshot": {
+    "n_examples": 372,
+    "n_empty": 1,
+    "rouge1": 0.2771,
+    "rouge1_ci": [
+      0.2675,
+      0.2869
+    ],
+    "rouge2": 0.0681,
+    "rouge2_ci": [
+      0.0656,
+      0.0705
+    ],
+    "rougeL": 0.1158,
+    "rougeL_ci": [
+      0.1123,
+      0.119
+    ],
+    "bertscore_f1": null,
+    "bertscore_f1_ci": null,
+    "length_stats": {
+      "mean": 538.0,
+      "median": 551.0,
+      "std": 153.2,
+      "min": 26,
+      "max": 911
+    },
+    "vocab_ttr": 0.417
+  },
+  "gemini_zeroshot": {
+    "n_examples": 372,
+    "n_empty": 0,
+    "rouge1": 0.3994,
+    "rouge1_ci": [
+      0.3916,
+      0.4073
+    ],
+    "rouge2": 0.1088,
+    "rouge2_ci": [
+      0.1067,
+      0.1109
+    ],
+    "rougeL": 0.1463,
+    "rougeL_ci": [
+      0.1439,
+      0.1485
+    ],
+    "bertscore_f1": null,
+    "bertscore_f1_ci": null,
+    "length_stats": {
+      "mean": 934.2,
+      "median": 933.5,
+      "std": 62.2,
+      "min": 769,
+      "max": 1130
+    },
+    "vocab_ttr": 0.3969
+  },
+  "qwen_sft": {
+    "n_examples": 372,
+    "n_empty": 0,
+    "rouge1": 0.3541,
+    "rouge1_ci": [
+      0.3433,
+      0.3644
+    ],
+    "rouge2": 0.0876,
+    "rouge2_ci": [
+      0.0843,
+      0.091
+    ],
+    "rougeL": 0.1545,
+    "rougeL_ci": [
+      0.1508,
+      0.1579
+    ],
+    "bertscore_f1": null,
+    "bertscore_f1_ci": null,
+    "length_stats": {
+      "mean": 1187.2,
+      "median": 1260.0,
+      "std": 244.5,
+      "min": 95,
+      "max": 1493
+    },
+    "vocab_ttr": 0.2124
+  }
+}

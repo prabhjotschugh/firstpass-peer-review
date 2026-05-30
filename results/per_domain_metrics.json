@@ -1,0 +1,87 @@
+{
+  "biology": {
+    "n": 68,
+    "accuracy": 0.8382,
+    "accuracy_ci": [
+      0.75,
+      0.9118
+    ],
+    "f1_macro": 0.8245,
+    "f1_per_class": {
+      "STANDARD": 0.8736,
+      "EXTENDED": 0.7755
+    },
+    "label_dist": {
+      "STANDARD": 43,
+      "EXTENDED": 25
+    }
+  },
+  "chemistry": {
+    "n": 67,
+    "accuracy": 0.7761,
+    "accuracy_ci": [
+      0.6866,
+      0.8806
+    ],
+    "f1_macro": 0.7587,
+    "f1_per_class": {
+      "STANDARD": 0.8235,
+      "EXTENDED": 0.6939
+    },
+    "label_dist": {
+      "EXTENDED": 25,
+      "STANDARD": 42
+    }
+  },
+  "earth_science": {
+    "n": 52,
+    "accuracy": 0.7692,
+    "accuracy_ci": [
+      0.6538,
+      0.8654
+    ],
+    "f1_macro": 0.7068,
+    "f1_per_class": {
+      "STANDARD": 0.8421,
+      "EXTENDED": 0.5714
+    },
+    "label_dist": {
+      "STANDARD": 37,
+      "EXTENDED": 15
+    }
+  },
+  "neuroscience": {
+    "n": 65,
+    "accuracy": 0.8154,
+    "accuracy_ci": [
+      0.7231,
+      0.9077
+    ],
+    "f1_macro": 0.789,
+    "f1_per_class": {
+      "STANDARD": 0.8636,
+      "EXTENDED": 0.7143
+    },
+    "label_dist": {
+      "EXTENDED": 23,
+      "STANDARD": 42
+    }
+  },
+  "physics": {
+    "n": 66,
+    "accuracy": 0.8182,
+    "accuracy_ci": [
+      0.7273,
+      0.9091
+    ],
+    "f1_macro": 0.7998,
+    "f1_per_class": {
+      "STANDARD": 0.8605,
+      "EXTENDED": 0.7391
+    },
+    "label_dist": {
+      "STANDARD": 44,
+      "EXTENDED": 22
+    }
+  }
+}

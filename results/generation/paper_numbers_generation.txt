@@ -1,0 +1,34 @@
+=================================================================
+NATURECRIT — GENERATION NUMBERS (copy-paste ready)
+Generated: 2026-04-19 01:01:38
+=================================================================
+
+  Human reference avg length: 2155 words
+
+── OUR MODEL (Qwen2.5-7B + LoRA SFT) ───────────────────
+  ROUGE-1  : 0.354 [0.343–0.364]
+  ROUGE-2  : 0.088 [0.084–0.091]
+  ROUGE-L  : 0.154 [0.151–0.158]
+  Avg len  : 1187.2 words
+  N empty  : 0
+
+── ALL BASELINES ─────────────────────────────────────────
+  Qwen2.5-7B-Instruct (zero-shot)         : R1=0.373  R2=0.090  RL=0.136  len=1018.8  empty=0
+  Llama-3-8B-Instruct (zero-shot)      : R1=0.391  R2=0.102  RL=0.164  len=1005.9  empty=0
+  DeepSeek-R1-Distill-Qwen-7B (zero-shot) : R1=0.277  R2=0.068  RL=0.116  len=538.0  empty=1
+  Gemini-3.1-flash-lite-preview (zero-shot)            : R1=0.399  R2=0.109  RL=0.146  len=934.2  empty=0
+
+── PAIRED BOOTSTRAP TESTS (ROUGE-L vs ours) ─────────────
+  qwen_zeroshot            : p=0.0005  ***  (Δ ROUGE-L=0.0183)
+  llama_zeroshot           : p=0.0005  ***  (Δ ROUGE-L=-0.0091)
+  deepseek_zeroshot        : p=0.0005  ***  (Δ ROUGE-L=0.0387)
+  gemini_zeroshot          : p=0.0005  ***  (Δ ROUGE-L=0.0082)
+
+── PER-DOMAIN ROUGE-L (ours) ────────────────────────────
+  biology         : RL=0.149 [0.140–0.157]  R1=0.345  R2=0.087  n=76
+  chemistry       : RL=0.161 [0.155–0.167]  R1=0.361  R2=0.090  n=76
+  earth_science   : RL=0.145 [0.135–0.154]  R1=0.334  R2=0.081  n=72
+  neuroscience    : RL=0.158 [0.150–0.165]  R1=0.360  R2=0.088  n=74
+  physics         : RL=0.159 [0.152–0.166]  R1=0.370  R2=0.092  n=74
+
+=================================================================

@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Ablation: effect of response-only loss masking. All rows use Qwen2.5-7B-Instruct as the base model.}
+\label{tab:ablation}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Configuration} & \textbf{Acc (\%)} & \textbf{F1-macro (\%)} & \textbf{$\Delta$ vs majority} \\
+\midrule
+  No fine-tuning (zero-shot) & 77.0 & 73.3 & +11.6 \\
+  LoRA without response masking & 62.0 & 56.2 & -3.5 \\
+  \textbf{LoRA with response masking (ours)} & 80.5 & 78.2 & +15.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Revision cycle prediction on \textsc{NatureCrit} test set ($n=318$). Accuracy and F1-macro with 95\% bootstrap CIs. F1-Extended = per-class F1 for the minority class. McNemar $p$ vs.\ our model ($\dagger$ p$<$0.05, $\ddagger$ p$<$0.01, $\S$ p$<$0.001).}}
+\label{tab:main_results}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model} & \textbf{Acc (\%)} & \textbf{F1-macro (\%)} & \textbf{F1-Extended (\%)} & \textbf{McNemar $p$} \\
+\midrule
+  Majority baseline & 65.4 & --- & 0.0 & 0.0000$\S$ \\
+  Qwen2.5-7B-Instruct (zero-shot) & 77.0 [72.3--81.5] & 73.3 [67.5--78.2] & 63.3 & 0.1853 \\
+  Qwen2.5-7B-Instruct (5-shot) & 65.4 [60.1--70.8] & 39.5 [37.5--41.4] & 0.0 & 0.0000$\S$ \\
+  Llama-3-8B-Instruct (zero-shot) & 67.9 [62.9--72.6] & 48.3 [43.1--53.6] & 16.4 & 0.0000$\S$ \\
+  DeepSeek-R1-Distill-Qwen-7B (zero-shot) & 65.4 [60.4--70.4] & 39.5 [37.5--41.3] & 0.0 & 0.0000$\S$ \\
+  Gemini-3.1-flash-lite-preview (zero-shot) & 70.1 [65.1--75.2] & 56.3 [50.1--62.1] & 31.6 & 0.0005$\S$ \\
+\midrule
+  Qwen2.5-7B + LoRA (no masking) & 62.0 [56.6--67.0] & 56.2 [50.9--61.6] & 40.4 & 0.0000$\S$ \\
+  \textbf{Qwen2.5-7B + LoRA (ours)} & 80.5 [76.1--84.9] & 78.2 [73.1--82.8] & 71.0 & --- \\
+\bottomrule
+\end{tabular}
+\end{table*}
